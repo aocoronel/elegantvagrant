@@ -1,0 +1,16 @@
+configuration {
+    font: "Ubuntu 13";
+    line-margin: 14;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     true;
+
+    drun-display-format: "{icon} {name}";
+}
+
+// Change username
+@theme "/home/user/.config/rofi/elegantvagrant.rasi"
