@@ -1,1 +1,0 @@
-The wttrbar module for Waybar can be found at https://github.com/bjesus/wttrbar
