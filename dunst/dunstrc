@@ -118,9 +118,16 @@ frame_color       = "#f4f113"
 highlight         = "#f4f113"
 default_icon =  ~/.config/dunst/emblems/critical.svg
 
-[taskwarrior]
-appname           = "taskwarrior"
+[task]
+appname           = "task"
 background        = "#1c1f24"
 foreground        = "#7c5cff"
 frame_color       = "#7c5cff"
-default_icon =  ~/.config/dunst/emblems/taskwarrior.svg
+default_icon =  ~/.config/dunst/emblems/task.svg
+
+[org_agenda]
+summary           = "Org Agenda"
+background        = "#1c1f24"
+foreground        = "#7c5cff"
+frame_color       = "#7c5cff"
+default_icon =  ~/.config/dunst/emblems/task.svg
