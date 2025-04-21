@@ -2,7 +2,7 @@
 
 modefile=$HOME/.cache/waybar-task
 
-ORG_DIR="$HOME/org"
+ORG_DIR="$HOME/org/agenda/"
 taskmode="org"
 # taskmode="taskwarrior"
 
