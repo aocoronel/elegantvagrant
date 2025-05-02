@@ -72,6 +72,10 @@ All the changes includes:
 | `wifi.jsonc`                | Button to manage WiFi networks                        | sejjy      |
 | `workspace-client.jsonc`    | Counts how many windows are open and their workspaces | Augusto Coronel |
 
+## Scripts
+
+The pomodoro module requires a shell script, which can be found [here](https://github.com/aocoronel/dotfiles/blob/main/scripts/__pomodoro.sh). And also, the pomodoro can be controlled using rofi, [here](https://github.com/aocoronel/dotfiles/blob/main/scripts/__pomodoro-control.sh)
+
 ## Plans
 
 Although this theme is quit comprehensive in visuals and features, yet solid, I do still plan to make radical changes to the looks and rewrite all scripts used in this theme.
