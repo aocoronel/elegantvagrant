@@ -12,5 +12,5 @@ configuration {
     drun-display-format: "{icon} {name}";
 }
 
-// Change username
-@theme "/home/user/.config/rofi/elegantvagrant.rasi"
+@theme "/home/aocoronel/.config/rofi/elegantvagrant-dark.rasi"
+@theme "/home/aocoronel/.config/rofi/elegantvagrant-oled.rasi"
