@@ -1,0 +1,119 @@
+html.dark,
+html[data-theme="dark"] {
+  --rx-mauve-01: #161618;
+  --rx-mauve-02: #1c1c1f;
+  --rx-mauve-03: #101010;
+  --rx-mauve-04: #28282c;
+  --rx-mauve-05: #2e2e32;
+  --rx-mauve-06: #34343a;
+  --rx-mauve-07: #3e3e44;
+  --rx-mauve-08: #504f57;
+  --rx-mauve-09: #706f78;
+  --rx-mauve-10: #7e7d86;
+  --rx-mauve-11: #a09fa6;
+}
+
+body {
+  background: #000000;
+}
+
+.left-sidebar-inner {
+  background-color: #050505;
+}
+
+.cp__right-sidebar-scrollable {
+  background-color: #050505;
+}
+
+b {
+  color: #ff79c6;
+}
+
+h1 {
+  color: #f38ba8;
+  font-size: 1.3em !important;
+}
+
+h2 {
+  color: #f3b387;
+  font-size: 1.25em !important;
+}
+
+h3 {
+  color: #a6e3a1;
+  font-size: 1.2em !important;
+}
+
+h4 {
+  color: #90e2d5;
+  font-size: 1.15em !important;
+}
+
+h5 {
+  color: #a0befe;
+  font-size: 1.1em !important;
+}
+
+h6 {
+  color: #cba6f7;
+  font-size: 1.05em !important;
+}
+
+i {
+  color: #a6e3a1;
+}
+
+mark {
+  background-color: #f1fa8c;
+  font-weight: bold;
+}
+
+p {
+  color: #d6d6d6;
+}
+
+:root {
+  font-size: 16px !important;
+  --ls-main-content-max-width: 1100px;
+  --ls-link-text-color: ;
+  --ls-link-ref-text-color: ;
+  r-ls-link-ref-text-hover-color:;
+}
+
+a.tag {
+  font-size: 16px !important;
+  background-color: #19191c;
+}
+
+a[data-ref] {
+  color: #bd93f9;
+}
+
+a[href^="https"] {
+  color: #7dd4e8;
+}
+
+a[href^="http"] {
+  color: #7dd4e8;
+}
+
+blockquote,
+pre,
+code,
+.flashcard {
+  background-color: #1c1c1f;
+}
+
+.block-content {
+  color: #d6d6d6;
+}
+
+.external-link::before {
+  content: "🌏";
+  margin-right: 5px;
+}
+
+.external-link {
+  border-bottom: 1px solid var(--external-link-color);
+  color: var(--external-link-color);
+}
