@@ -1,3 +1,5 @@
+// Original File used as Template
+// https://github.com/sejjy/mechabar/blob/main/config.jsonc
 {
   "include": [
     "$HOME/.config/waybar/modules/arch-update.jsonc",
