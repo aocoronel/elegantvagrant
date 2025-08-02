@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# https://github.com/janpstrunn/dotfiles/blob/main/scripts/__pomodoro.sh
+# https://github.com/anstrinn/dotfiles/blob/main/scripts/__pomodoro.sh
 
 TIMER_STATE_FILE="/tmp/pomodoro_timer_state"
 OUTPUT_FILE="/tmp/pomodoro_output"

@@ -1,11 +1,11 @@
 # Rofi: Elegant Vagrant
 
-This is a minimal `rofi` configuration that tries keep out of your way by not blocking elements from `rofi` while creating custom scripts. The [fuzzel](https://github.com/janpstrunn/elegantvagrant/tree/main/fuzzel) theme is a great alternative to `rofi`.
+This is a minimal `rofi` configuration that tries keep out of your way by not blocking elements from `rofi` while creating custom scripts. The [fuzzel](https://github.com/anstrinn/elegantvagrant/tree/main/fuzzel) theme is a great alternative to `rofi`.
 
 ## Footages
 
 <div align="center">
-  <img src="https://git.disroot.org/janpstrunn/images/raw/branch/main/elegantvagrant/2025-04-21-rofi.webp">
+  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-rofi.webp">
   <p>Rofi running a buku script</p>
 </div>
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# https://github.com/janpstrunn/dotfiles/blob/main/scripts/__pomodoro-control.sh
+# https://github.com/anstrinn/dotfiles/blob/main/scripts/__pomodoro-control.sh
 
 if ! command -v rofi &>/dev/null; then
   echo "rofi could not be found. Please install it."

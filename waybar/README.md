@@ -31,9 +31,9 @@ All the changes includes:
 ### Footages
 
 <div align="center">
-  <img src="https://git.disroot.org/janpstrunn/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-legacy.webp">
+  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-legacy.webp">
   <p>Waybar Legacy Profile</p>
-  <img src="https://git.disroot.org/janpstrunn/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-default.webp">
+  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-default.webp">
   <p>Waybar Default Profile</p>
 </div>
 
@@ -44,7 +44,7 @@ All the changes includes:
 
 | Module                      | Content                                               | Author     |
 | --------------------------- | ----------------------------------------------------- | ---------- |
-| `arch-linux.jsonc`          | Arch Linux Logo                                       | Janpstrunn |
+| `arch-linux.jsonc`          | Arch Linux Logo                                       | Anstrinn |
 | `arch-update.jsonc`         | Arch Linux Updates (pacman, flatpak and AUR)          | sejjy      |
 | `backlight.jsonc`           | Screen brightness meter                               | sejjy      |
 | `battery.jsonc`             | Battery meter                                         | sejjy      |
@@ -52,29 +52,29 @@ All the changes includes:
 | `clock.jsonc`               | Current Time                                          | sejjy      |
 | `cpu.jsonc`                 | CPU usage                                             | sejjy      |
 | `cpuinfo.jsonc`             | Temperature meter                                     | sejjy      |
-| `desktop.jsonc`             | Replace laptop module, with only WiFi module enabled  | Janpstrunn |
-| `hyprland-language.jsonc`   | Display current keyboard (Hyprland only)              | Janpstrunn |
-| `hyprland-submap.jsonc`     | Display Hyprland Submaps                              | Janpstrunn |
-| `hyprland-workspaces.jsonc` | Display workspaces (Hyprland only)                    | Janpstrunn |
+| `desktop.jsonc`             | Replace laptop module, with only WiFi module enabled  | Anstrinn |
+| `hyprland-language.jsonc`   | Display current keyboard (Hyprland only)              | Anstrinn |
+| `hyprland-submap.jsonc`     | Display Hyprland Submaps                              | Anstrinn |
+| `hyprland-workspaces.jsonc` | Display workspaces (Hyprland only)                    | Anstrinn |
 | `idle.jsonc`                | Button to toggle idle                                 | sejjy      |
-| `keyboard.jsonc`            | Groups Hyprland Language and Submaps                  | Janpstrunn |
-| `laptop.jsonc`              | Groups Laptop Modules: backlight, battery...          | Janpstrunn |
-| `media.jsonc`               | Display current playing media                         | Janpstrunn |
+| `keyboard.jsonc`            | Groups Hyprland Language and Submaps                  | Anstrinn |
+| `laptop.jsonc`              | Groups Laptop Modules: backlight, battery...          | Anstrinn |
+| `media.jsonc`               | Display current playing media                         | Anstrinn |
 | `memory.jsonc`              | Memory usage                                          | sejjy      |
-| `network.jsonc`             | Network speeds                                        | Janpstrunn |
-| `nixos.jsonc`               | NixOS Logo                                            | Janpstrunn |
-| `pomodoro.jsonc`            | Pomodoro counter                                      | Janpstrunn |
-| `power.jsonc`               | Groups all power commands (poweroff, reboot...)       | Janpstrunn |
+| `network.jsonc`             | Network speeds                                        | Anstrinn |
+| `nixos.jsonc`               | NixOS Logo                                            | Anstrinn |
+| `pomodoro.jsonc`            | Pomodoro counter                                      | Anstrinn |
+| `power.jsonc`               | Groups all power commands (poweroff, reboot...)       | Anstrinn |
 | `pulseaudio.jsonc`          | Volume meter                                          | sejjy      |
-| `tasks.jsonc`               | Taskwarrior or Org-mode tasks                         | Janpstrunn |
-| `tray.jsonc`                | All applications that supports tray                   | Janpstrunn |
-| `weather.jsonc`             | Wttrbar module to display weather from wttr.in        | Janpstrunn |
+| `tasks.jsonc`               | Taskwarrior or Org-mode tasks                         | Anstrinn |
+| `tray.jsonc`                | All applications that supports tray                   | Anstrinn |
+| `weather.jsonc`             | Wttrbar module to display weather from wttr.in        | Anstrinn |
 | `wifi.jsonc`                | Button to manage WiFi networks                        | sejjy      |
-| `workspace-client.jsonc`    | Counts how many windows are open and their workspaces | Janpstrunn |
+| `workspace-client.jsonc`    | Counts how many windows are open and their workspaces | Anstrinn |
 
 ## Scripts
 
-The pomodoro module requires a shell script, which can be found [here](https://github.com/janpstrunn/dotfiles/blob/main/scripts/__pomodoro.sh). And also, the pomodoro can be controlled using rofi, [here](https://github.com/janpstrunn/dotfiles/blob/main/scripts/__pomodoro-control.sh)
+The pomodoro module requires a shell script, which can be found [here](https://github.com/anstrinn/dotfiles/blob/main/scripts/__pomodoro.sh). And also, the pomodoro can be controlled using rofi, [here](https://github.com/anstrinn/dotfiles/blob/main/scripts/__pomodoro-control.sh)
 
 ## Plans
 

@@ -7,7 +7,7 @@ This config has a custom color for `taskwarrior` and `org-alert` (Emacs Notifica
 ## Footages
 
 <div align="center">
-  <img src="https://git.disroot.org/janpstrunn/images/raw/branch/main/elegantvagrant/2025-04-21-dunst.webp">
+  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-dunst.webp">
   <p>All dunst urgencies and custom colors</p>
 </div>
 

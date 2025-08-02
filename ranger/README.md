@@ -5,7 +5,7 @@ This is a minimal theme for the awesome `ranger` file manager.
 ## Footages
 
 <div align="center">
-  <img src="https://git.disroot.org/janpstrunn/images/raw/branch/main/elegantvagrant/2025-04-21-ranger.webp">
+  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-ranger.webp">
   <p>Ranger with the Ranger Devicons2 Plugin</p>
 </div>
 

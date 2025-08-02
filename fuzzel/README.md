@@ -1,11 +1,11 @@
 # Fuzzel: Elegant Vagrant
 
-This is a minimal `fuzzel` configuration that tries to mimic the [rofi](https://github.com/janpstrunn/elegantvagrant/tree/main/rofi) theme.
+This is a minimal `fuzzel` configuration that tries to mimic the [rofi](https://github.com/anstrinn/elegantvagrant/tree/main/rofi) theme.
 
 ## Footages
 
 <div align="center">
-  <img src="https://git.disroot.org/janpstrunn/images/raw/branch/main/elegantvagrant/2025-04-21-fuzzel.webp">
+  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-fuzzel.webp">
   <p>Fuzzel displaying emojis</p>
 </div>
 
