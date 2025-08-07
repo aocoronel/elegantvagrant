@@ -12,5 +12,5 @@ configuration {
     drun-display-format: "{icon} {name}";
 }
 
-@theme "/home/anstrinn/.config/rofi/elegantvagrant-dark.rasi"
-@theme "/home/anstrinn/.config/rofi/elegantvagrant-oled.rasi"
+@theme "~/.config/rofi/elegantvagrant-dark.rasi"
+@theme "~/.config/rofi/elegantvagrant-oled.rasi"
