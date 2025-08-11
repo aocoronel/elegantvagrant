@@ -31,9 +31,9 @@ All the changes includes:
 ### Footages
 
 <div align="center">
-  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-legacy.webp">
+  <img src="https://git.disroot.org/aocoronel/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-legacy.webp">
   <p>Waybar Legacy Profile</p>
-  <img src="https://git.disroot.org/anstrinn/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-default.webp">
+  <img src="https://git.disroot.org/aocoronel/images/raw/branch/main/elegantvagrant/2025-04-21-waybar-default.webp">
   <p>Waybar Default Profile</p>
 </div>
 
@@ -74,7 +74,7 @@ All the changes includes:
 
 ## Scripts
 
-The pomodoro module requires a shell script, which can be found [here](https://github.com/anstrinn/dotfiles/blob/main/scripts/__pomodoro.sh). And also, the pomodoro can be controlled using rofi, [here](https://github.com/anstrinn/dotfiles/blob/main/scripts/__pomodoro-control.sh)
+The pomodoro module requires a shell script, which can be found [here](https://github.com/aocoronel/dotfiles/blob/main/scripts/__pomodoro.sh). And also, the pomodoro can be controlled using rofi, [here](https://github.com/aocoronel/dotfiles/blob/main/scripts/__pomodoro-control.sh)
 
 ## Plans
 

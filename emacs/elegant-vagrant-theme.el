@@ -1,8 +1,8 @@
 ;;; elegant-vagrant-theme.el -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
-;; Author: anstrinn <https://github.com/anstrinn>
+;; Author: aocoronel <https://github.com/aocoronel>
 ;; Maintainer:
-;; Source: https://github.com/anstrinn/elegantvagrant
+;; Source: https://github.com/aocoronel/elegantvagrant
 ;;
 ;; Forked: doom-challenger-deep
 ;;
