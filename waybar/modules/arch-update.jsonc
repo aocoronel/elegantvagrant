@@ -9,6 +9,6 @@
     "interval": 600,
     "tooltip": true,
     "min-length": 1,
-    "max-length": 5,
+    "max-length": 6,
   },
 }
