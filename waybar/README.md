@@ -44,7 +44,7 @@ All the changes includes:
 
 | Module                      | Content                                               | Author     |
 | --------------------------- | ----------------------------------------------------- | ---------- |
-| `arch-linux.jsonc`          | Arch Linux Logo                                       | Augusto Coronel |
+| `arch-linux.jsonc`          | Arch Linux Logo                                       | Me |
 | `arch-update.jsonc`         | Arch Linux Updates (pacman, flatpak and AUR)          | sejjy      |
 | `backlight.jsonc`           | Screen brightness meter                               | sejjy      |
 | `battery.jsonc`             | Battery meter                                         | sejjy      |
@@ -52,25 +52,25 @@ All the changes includes:
 | `clock.jsonc`               | Current Time                                          | sejjy      |
 | `cpu.jsonc`                 | CPU usage                                             | sejjy      |
 | `cpuinfo.jsonc`             | Temperature meter                                     | sejjy      |
-| `desktop.jsonc`             | Replace laptop module, with only WiFi module enabled  | Augusto Coronel |
-| `hyprland-language.jsonc`   | Display current keyboard (Hyprland only)              | Augusto Coronel |
-| `hyprland-submap.jsonc`     | Display Hyprland Submaps                              | Augusto Coronel |
-| `hyprland-workspaces.jsonc` | Display workspaces (Hyprland only)                    | Augusto Coronel |
+| `desktop.jsonc`             | Replace laptop module, with only WiFi module enabled  | Me |
+| `hyprland-language.jsonc`   | Display current keyboard (Hyprland only)              | Me |
+| `hyprland-submap.jsonc`     | Display Hyprland Submaps                              | Me |
+| `hyprland-workspaces.jsonc` | Display workspaces (Hyprland only)                    | Me |
 | `idle.jsonc`                | Button to toggle idle                                 | sejjy      |
-| `keyboard.jsonc`            | Groups Hyprland Language and Submaps                  | Augusto Coronel |
-| `laptop.jsonc`              | Groups Laptop Modules: backlight, battery...          | Augusto Coronel |
-| `media.jsonc`               | Display current playing media                         | Augusto Coronel |
+| `keyboard.jsonc`            | Groups Hyprland Language and Submaps                  | Me |
+| `laptop.jsonc`              | Groups Laptop Modules: backlight, battery...          | Me |
+| `media.jsonc`               | Display current playing media                         | Me |
 | `memory.jsonc`              | Memory usage                                          | sejjy      |
-| `network.jsonc`             | Network speeds                                        | Augusto Coronel |
-| `nixos.jsonc`               | NixOS Logo                                            | Augusto Coronel |
-| `pomodoro.jsonc`            | Pomodoro counter                                      | Augusto Coronel |
-| `power.jsonc`               | Groups all power commands (poweroff, reboot...)       | Augusto Coronel |
+| `network.jsonc`             | Network speeds                                        | Me |
+| `nixos.jsonc`               | NixOS Logo                                            | Me |
+| `pomodoro.jsonc`            | Pomodoro counter                                      | Me |
+| `power.jsonc`               | Groups all power commands (poweroff, reboot...)       | Me |
 | `pulseaudio.jsonc`          | Volume meter                                          | sejjy      |
-| `tasks.jsonc`               | Taskwarrior or Org-mode tasks                         | Augusto Coronel |
-| `tray.jsonc`                | All applications that supports tray                   | Augusto Coronel |
-| `weather.jsonc`             | Wttrbar module to display weather from wttr.in        | Augusto Coronel |
+| `tasks.jsonc`               | Taskwarrior or Org-mode tasks                         | Me |
+| `tray.jsonc`                | All applications that supports tray                   | Me |
+| `weather.jsonc`             | Wttrbar module to display weather from wttr.in        | Me |
 | `wifi.jsonc`                | Button to manage WiFi networks                        | sejjy      |
-| `workspace-client.jsonc`    | Counts how many windows are open and their workspaces | Augusto Coronel |
+| `workspace-client.jsonc`    | Counts how many windows are open and their workspaces | Me |
 
 ## Scripts
 
