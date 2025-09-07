@@ -1,9 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -g -O2
-DEBUG_CFLAGS = -Wall -g -O0
 PROGRAMS = cpu-usage cpu-temp
 
-all: debug
+all: release
 
 cpu-temp: cpu-temp.o
 	$(CC) $(CFLAGS) -o cpu-temp cpu-temp.o
@@ -18,9 +17,6 @@ cpu-temp.o: cpu-temp.c
 	$(CC) $(CFLAGS) -c cpu-temp.c
 
 release: $(PROGRAMS)
-
-debug: CFLAGS = $(DEBUG_CFLAGS)
-debug: $(PROGRAMS)
 
 clean:
 	rm -f *.o $(PROGRAMS)
