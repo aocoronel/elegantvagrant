@@ -24,9 +24,9 @@ All the changes includes:
 ## Profiles
 
 - **Default Mechabar:** Use `default-mechabar.jsonc`
-    - Contains no workspaces, has pomodoro centered, and a client module to count open windows
+  - Contains no workspaces, has pomodoro centered, and a client module to count open windows
 - **Legacy Mechabar:** Use `legacy-mechabar.jsonc`
-    - Contains workspaces, no client module and the pomodoro isn't centered
+  - Contains workspaces, no client module and the pomodoro isn't centered
 
 ### Footages
 
@@ -42,39 +42,39 @@ All the changes includes:
 
 ## Modules
 
-| Module                      | Content                                               | Author     |
-| --------------------------- | ----------------------------------------------------- | ---------- |
-| `arch-linux.jsonc`          | Arch Linux Logo                                       | Me |
-| `arch-update.jsonc`         | Arch Linux Updates (pacman, flatpak and AUR)          | sejjy      |
-| `backlight.jsonc`           | Screen brightness meter                               | sejjy      |
-| `battery.jsonc`             | Battery meter                                         | sejjy      |
-| `bluetooth.jsonc`           | Bluetooth button and actions                          | sejjy      |
-| `clock.jsonc`               | Current Time                                          | sejjy      |
-| `cpu.jsonc`                 | CPU usage                                             | sejjy      |
-| `cpuinfo.jsonc`             | Temperature meter                                     | sejjy      |
-| `desktop.jsonc`             | Replace laptop module, with only WiFi module enabled  | Me |
-| `hyprland-language.jsonc`   | Display current keyboard (Hyprland only)              | Me |
-| `hyprland-submap.jsonc`     | Display Hyprland Submaps                              | Me |
-| `hyprland-workspaces.jsonc` | Display workspaces (Hyprland only)                    | Me |
-| `idle.jsonc`                | Button to toggle idle                                 | sejjy      |
-| `keyboard.jsonc`            | Groups Hyprland Language and Submaps                  | Me |
-| `laptop.jsonc`              | Groups Laptop Modules: backlight, battery...          | Me |
-| `media.jsonc`               | Display current playing media                         | Me |
-| `memory.jsonc`              | Memory usage                                          | sejjy      |
-| `network.jsonc`             | Network speeds                                        | Me |
-| `nixos.jsonc`               | NixOS Logo                                            | Me |
-| `pomodoro.jsonc`            | Pomodoro counter                                      | Me |
-| `power.jsonc`               | Groups all power commands (poweroff, reboot...)       | Me |
-| `pulseaudio.jsonc`          | Volume meter                                          | sejjy      |
-| `tasks.jsonc`               | Taskwarrior or Org-mode tasks                         | Me |
-| `tray.jsonc`                | All applications that supports tray                   | Me |
-| `weather.jsonc`             | Wttrbar module to display weather from wttr.in        | Me |
-| `wifi.jsonc`                | Button to manage WiFi networks                        | sejjy      |
-| `workspace-client.jsonc`    | Counts how many windows are open and their workspaces | Me |
+| Module                      | Content                                               | Author |
+| --------------------------- | ----------------------------------------------------- | ------ |
+| `arch-linux.jsonc`          | Arch Linux Logo                                       | Me     |
+| `arch-update.jsonc`         | Arch Linux Updates (pacman, flatpak and AUR)          | sejjy  |
+| `backlight.jsonc`           | Screen brightness meter                               | sejjy  |
+| `battery.jsonc`             | Battery meter                                         | sejjy  |
+| `bluetooth.jsonc`           | Bluetooth button and actions                          | sejjy  |
+| `clock.jsonc`               | Current Time                                          | sejjy  |
+| `cpu.jsonc`                 | CPU usage                                             | sejjy  |
+| `cpuinfo.jsonc`             | Temperature meter                                     | sejjy  |
+| `desktop.jsonc`             | Replace laptop module, with only WiFi module enabled  | Me     |
+| `hyprland-language.jsonc`   | Display current keyboard (Hyprland only)              | Me     |
+| `hyprland-submap.jsonc`     | Display Hyprland Submaps                              | Me     |
+| `hyprland-workspaces.jsonc` | Display workspaces (Hyprland only)                    | Me     |
+| `idle.jsonc`                | Button to toggle idle                                 | sejjy  |
+| `keyboard.jsonc`            | Groups Hyprland Language and Submaps                  | Me     |
+| `laptop.jsonc`              | Groups Laptop Modules: backlight, battery...          | Me     |
+| `media.jsonc`               | Display current playing media                         | Me     |
+| `memory.jsonc`              | Memory usage                                          | sejjy  |
+| `network.jsonc`             | Network speeds                                        | Me     |
+| `nixos.jsonc`               | NixOS Logo                                            | Me     |
+| `pomodoro.jsonc`            | Pomodoro counter                                      | Me     |
+| `power.jsonc`               | Groups all power commands (poweroff, reboot...)       | Me     |
+| `pulseaudio.jsonc`          | Volume meter                                          | sejjy  |
+| `tasks.jsonc`               | Taskwarrior or Org-mode tasks                         | Me     |
+| `tray.jsonc`                | All applications that supports tray                   | Me     |
+| `weather.jsonc`             | Wttrbar module to display weather from wttr.in        | Me     |
+| `wifi.jsonc`                | Button to manage WiFi networks                        | sejjy  |
+| `workspace-client.jsonc`    | Counts how many windows are open and their workspaces | Me     |
 
-## Scripts
+## Installation
 
-The pomodoro module requires a shell script, which can be found [here](https://github.com/aocoronel/dotfiles/blob/main/scripts/__pomodoro.sh). And also, the pomodoro can be controlled using rofi, [here](https://github.com/aocoronel/dotfiles/blob/main/scripts/__pomodoro-control.sh)
+Just copying this directory to `~/.config/waybar` is almost enough. It's still required to run `make` inside the `scripts` directory to build some programs used to display relevant information.
 
 ## Plans
 
