@@ -1,6 +1,6 @@
 {
   "custom/cpuinfo": {
-    "exec": "~/.config/waybar/scripts/cpu-temp.sh",
+    "exec": "~/.config/waybar/scripts/cpu-temp",
     "return-type": "json",
     "format": "{}",
     "tooltip": true,
