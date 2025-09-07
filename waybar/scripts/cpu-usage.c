@@ -46,6 +46,6 @@ int main() {
   if (usage > 75) {
     printf("{\"text\": \"<span color='#f38ba8'>󰀩 %.2f°C</span>\"}", usage);
   } else {
-    printf("{\"text\": \"󰻠 %.0f°C\"}", usage);
+    printf("{\"text\": \"󰻠 %.0f%c \"}", usage, '%');
   }
 }
