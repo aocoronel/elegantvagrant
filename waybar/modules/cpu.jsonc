@@ -1,11 +1,11 @@
 {
   "custom/cpu": {
-    "exec": "~/.config/waybar/scripts/cpu-usage.sh",
+    "exec": "~/.config/waybar/scripts/cpu-usage",
     "return-type": "json",
-    "on-click": "foot -e bash -c htop",
+    "on-click": "alacritty -e bash -c htop",
     "tooltip": true,
     "interval": 5,
-    "min-length": 6,
-    "max-length": 6,
+    "min-length": 7,
+    "max-length": 7,
   },
 }
