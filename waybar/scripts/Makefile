@@ -1,8 +1,11 @@
 CC = gcc
 CFLAGS = -Wall -g -O2
-PROGRAMS = cpu-usage cpu-temp pomo media-player
+PROGRAMS = cpu-usage cpu-temp pomo media-player pomodoro
 
 all: release
+
+pomodoro: pomodoro.o
+	$(CC) $(CFLAGS) -o pomodoro.out pomodoro.o
 
 media-player: media-player.o
 	$(CC) $(CFLAGS) -o media-player.out media-player.o
@@ -15,6 +18,9 @@ cpu-temp: cpu-temp.o
 
 cpu-usage: cpu-usage.o
 	$(CC) $(CFLAGS) -o cpu-usage.out cpu-usage.o
+
+pomodoro.o:
+	$(CC) $(CFLAGS) -c pomodoro.c
 
 media-player.o:
 	$(CC) $(CFLAGS) -c media-player.c
