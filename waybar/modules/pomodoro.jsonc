@@ -2,13 +2,13 @@
 
 {
   "custom/pomodoro": {
-    "exec": "~/.config/waybar/scripts/pomo.sh",
+    "exec": "~/.config/waybar/scripts/pomo.out",
     "interval": 1,
     "format": "{}",
     "return-type": "json",
   },
   "custom/pomodoro-old": {
-    "exec": "~/.config/waybar/scripts/pomo.sh",
+    "exec": "~/.config/waybar/scripts/pomo.out",
     "interval": 1,
     "format": "{}",
     "return-type": "json",

@@ -1,6 +1,6 @@
 {
   "custom/cpu": {
-    "exec": "~/.config/waybar/scripts/cpu-usage",
+    "exec": "~/.config/waybar/scripts/cpu-usage.out",
     "return-type": "json",
     "on-click": "alacritty -e bash -c htop",
     "tooltip": true,
