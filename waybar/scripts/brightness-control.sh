@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Author: Jesse Mirabel (@sejjy)
-# GitHub: https://github.com/sejjy/mechabar
-
-# Print error message for invalid arguments
 print_error() {
   cat <<"EOF"
 Usage: ./brightnesscontrol.sh <action>
@@ -13,14 +9,11 @@ Valid actions are:
 EOF
 }
 
-# Send a notification with brightness info
 send_notification() {
   brightness=$(brightnessctl info | grep -oP "(?<=\()\d+(?=%)")
-  notify-send -r 91190 "Brightness: ${brightness}%"
   notify-send -r 91190 -h int:value:${brightness} "Brightness: ${brightness}%"
 }
 
-# Get the current brightness percentage and device name
 get_brightness() {
   brightness=$(brightnessctl -m | grep -o '[0-9]\+%' | head -c-2)
   device=$(brightnessctl -m | head -n 1 | awk -F',' '{print $1}' | sed 's/_/ /g; s/\<./\U&/g') # Get device name
@@ -29,7 +22,6 @@ get_brightness() {
 }
 get_brightness
 
-# Handle options
 while getopts o: opt; do
   case "${opt}" in
   o)
@@ -63,7 +55,6 @@ while getopts o: opt; do
   esac
 done
 
-# Determine the icon based on brightness level
 get_icon() {
   if ((brightness <= 5)); then
     icon=""
@@ -86,7 +77,6 @@ get_icon() {
   fi
 }
 
-# Backlight module and tooltip
 get_icon
 module="${icon} ${brightness}%"
 

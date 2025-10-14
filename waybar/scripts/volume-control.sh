@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Author: Jesse Mirabel (@sejjy)
-# GitHub: https://github.com/sejjy/mechabar
-
-# Define functions
 print_error() {
   cat <<"EOF"
 Usage: ./volumecontrol.sh -[device] <actions>
@@ -36,7 +32,6 @@ notify_mute() {
 action_volume() {
   case "${1}" in
   i)
-    # Check current volume and increase only if below 100
     current_vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | sed 's/%//')
     if [ "$current_vol" -lt 100 ]; then
       new_vol=$((current_vol + 2))
@@ -47,7 +42,6 @@ action_volume() {
     fi
     ;;
   d)
-    # Decrease volume, ensuring it doesn't drop below 0%
     current_vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | sed 's/%//')
     new_vol=$((current_vol - 2))
     if [ "$new_vol" -lt 0 ]; then
@@ -72,7 +66,6 @@ select_output() {
   fi
 }
 
-# Evaluate device option
 while getopts iops: DeviceOpt; do
   case "${DeviceOpt}" in
   i)
@@ -92,7 +85,6 @@ while getopts iops: DeviceOpt; do
     srce="${nsink}"
     ;;
   s)
-    # Select an output device
     select_output "$@"
     exit
     ;;
@@ -100,10 +92,8 @@ while getopts iops: DeviceOpt; do
   esac
 done
 
-# Set default variables
 shift $((OPTIND - 1))
 
-# Execute action
 case "${1}" in
 i) action_volume i ;;
 d) action_volume d ;;
