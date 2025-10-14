@@ -1,6 +1,6 @@
 {
   "custom/media": {
-    "exec": "~/.config/waybar/scripts/media-player.sh",
+    "exec": "~/.config/waybar/scripts/media-player.out",
     "return-type": "json",
     "interval": 3,
     "format": "{}",
