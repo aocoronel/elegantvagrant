@@ -1,21 +1,50 @@
-// Waybar Config
-
-// Profiles:
-// "$HOME/.config/waybar/profiles/default-mechabar.jsonc",
-// "$HOME/.config/waybar/profiles/legacy-mechabar.jsonc",
-
-// Choose a Distro:
-// "$HOME/.config/waybar/modules/arch-linux.jsonc",
-// "$HOME/.config/waybar/modules/nixos.jsonc",
-
-// Choose a Machine:
-// "$HOME/.config/waybar/modules/desktop.jsonc",
-// "$HOME/.config/waybar/modules/laptop.jsonc",
-
 {
   "include": [
-    "$HOME/.config/waybar/profiles/default-mechabar.jsonc",
-    "$HOME/.config/waybar/modules/nixos.jsonc",
-    "$HOME/.config/waybar/modules/desktop.jsonc",
+    "$HOME/.config/waybar/modules/clock.jsonc",
+    "$HOME/.config/waybar/modules/distro.jsonc",
+    "$HOME/.config/waybar/modules/hyprland.jsonc",
+    "$HOME/.config/waybar/modules/idle.jsonc",
+    "$HOME/.config/waybar/modules/laptop.jsonc",
+    "$HOME/.config/waybar/modules/machine-info.jsonc",
+    "$HOME/.config/waybar/modules/media.jsonc",
+    "$HOME/.config/waybar/modules/network.jsonc",
+    "$HOME/.config/waybar/modules/pomodoro.jsonc",
+    "$HOME/.config/waybar/modules/power.jsonc",
+    "$HOME/.config/waybar/modules/tasks.jsonc",
+    "$HOME/.config/waybar/modules/weather.jsonc",
   ],
+  "layer": "top",
+  "position": "top",
+  "mode": "dock",
+  "reload_style_on_change": true,
+  "gtk-layer-shell": true,
+  "modules-left": [
+    "group/power",
+    "ext/workspaces",
+    "custom/media",
+  ],
+  "modules-center": [
+    "custom/taskwarrior",
+    "group/clockg",
+    "custom/pomodoro",
+  ],
+  "modules-right": [
+    "group/networkg",
+    "group/laptop",
+    "group/machine-info",
+    // "group/keyboardg", // Hyprland Keyboard
+    "custom/weather",
+    "tray",
+  ],
+  "ext/workspaces": {
+    "format": "{icon}",
+    "ignore-hidden": true,
+    "on-click": "activate",
+    "on-click-right": "deactivate",
+    "sort-by-id": true,
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10,
+  },
 }

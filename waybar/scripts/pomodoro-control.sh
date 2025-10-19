@@ -45,7 +45,7 @@ function toggle() {
   if [ -f "$TIMER_STATE_FILE" ]; then
     rm $TIMER_STATE_FILE
   else
-    sh "$HOME/.config/waybar/scripts/pomodoro.sh"
+    exec "$HOME/.config/waybar/scripts/pomodoro.out"
   fi
   rm $OUTPUT_FILE
 }

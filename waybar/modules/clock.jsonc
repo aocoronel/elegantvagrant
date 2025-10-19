@@ -26,4 +26,12 @@
     "min-length": 8,
     "max-length": 8,
   },
+  "group/clockg": {
+    "orientation": "inherit",
+    "modules": [
+    "idle_inhibitor",
+    "clock#time",
+    "clock#date",
+    ]
+  }
 }

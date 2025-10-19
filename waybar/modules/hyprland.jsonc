@@ -1,0 +1,22 @@
+{
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "  EN",
+    "format-pt": "  BR",
+    "keyboard-name": "semico-usb-keyboard",
+  },
+  "hyprland/submap": {
+    "format": "{}",
+    "max-length": 8,
+    "tooltip": false,
+  },
+  "hyprland/workspaces": {
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "persistent-workspaces": {},
+  },
+  "group/keyboardg": {
+    "orientation": "inherit",
+    "modules": ["hyprland/language", "hyprland/submap"],
+  },
+}

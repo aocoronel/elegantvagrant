@@ -1,0 +1,16 @@
+/* Main Colors */
+
+@define-color black           #000000;
+@define-color dim-black       #090909;
+@define-color white           #d9d9d9;
+@define-color purple          #7c5cff;
+
+@define-color border-color    #2E3436;
+@define-color tooltip         #050505;
+
+/* Battery Colors */
+
+@define-color warning         #f9e2af;
+@define-color critical        #f38ba8;
+@define-color full            #a6e3a1;
+@define-color charging        #cdd6f4;
