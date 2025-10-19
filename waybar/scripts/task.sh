@@ -19,7 +19,7 @@ if [ "$taskmode" == "taskwarrior" ]; then
       tasks=$(task status:pending due.before:tomorrow count)
     fi
   else
-    tasks=$(task status:pending count)
+    tasks=$(task status:pending due.before:tomorrow count)
   fi
 elif [ "$taskmode" == "org" ]; then
   if [ ! -d "$ORG_DIR" ]; then
