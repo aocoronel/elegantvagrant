@@ -42,7 +42,7 @@ tooltip+="\nLMB: Show all remaining tasks"
 tooltip+="\nRMB: Show today remaining tasks"
 
 if [ -z "$tasks" ]; then
-  echo "{\"text\": \" No tasks\", \"tooltip\": \"$tooltip\"}"
+  echo "{\"text\": \" 0\", \"tooltip\": \"$tooltip\"}"
 else
-  echo "{\"text\":\" $tasks tasks\", \"tooltip\": \"$tooltip\"}"
+  echo "{\"text\":\" $tasks\", \"tooltip\": \"$tooltip\"}"
 fi

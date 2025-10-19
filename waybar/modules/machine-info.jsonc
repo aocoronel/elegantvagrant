@@ -1,0 +1,39 @@
+{
+  "cpu": {
+    "on-click": "alacritty -e bash -c htop",
+    "tooltip": true,
+    "interval": 5,
+    "min-length": 7,
+    "max-length": 7,
+    "format": " {usage}%"
+  },
+  "temperature": {
+    "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "critical-threshold": 10,
+    "format-critical": " {temperatureC}°C",
+    "format": "{}",
+  },
+  "memory": {
+    "states": {
+      "warning": 75,
+      "critical": 90,
+    },
+    "format": "󰘚 {percentage}%",
+    "format-critical": "󰀦 {percentage}%",
+    "on-click": "foot -e bash -c htop",
+    "tooltip": true,
+    "tooltip-format": "Memory Used: {used:0.1f} GB / {total:0.1f} GB",
+    "interval": 5,
+    "min-length": 7,
+    "max-length": 7,
+  },
+  "group/machine-info": {
+    "orientation": "inherit",
+    "modules": [
+    "temperature",
+    "memory",
+    "cpu",
+    ]
+  }
+}
