@@ -75,12 +75,12 @@ tooltip label {
 
 #temperature {
   background: @black;
+  margin-right: -10px;
 }
 
 #memory {
   background: @black;
-  padding-left: 1px;
-  padding-right: 0;
+  margin-right: -10px;
 }
 #memory.warning {
   color: @warning;
@@ -91,6 +91,7 @@ tooltip label {
 
 #cpu {
   background: @black;
+  margin-right: -10px;
 }
 
 /* == Distro and Power Menu == */
