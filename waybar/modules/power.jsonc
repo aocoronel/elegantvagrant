@@ -2,7 +2,7 @@
   "custom/quit": {
     "format": "󰗼  ",
     "tooltip": true,
-    "tooltip-format": "Quit Hyprland",
+    "tooltip-format": "Quit",
     "on-click": "hyprctl dispatch exit",
   },
   "custom/lock": {

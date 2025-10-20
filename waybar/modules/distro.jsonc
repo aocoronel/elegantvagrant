@@ -4,7 +4,8 @@
 {
   "custom/distro": {
     "format": " ",
-    "on-click": "rofi -modes drun,run -show run",
-    "tooltip": false,
+    "tooltip-format": "Launch Programs",
+    "on-click": "rofi -show drun",
+    "tooltip": true,
   },
 }
