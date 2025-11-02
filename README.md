@@ -1,5 +1,8 @@
 # Elegant Vagrant
 
+> [!WARNING]
+> This repository has been moved to Codeberg. Find it at [aocoronel/elegantvagrant](https://codeberg.org/aocoronel/elegantvagrant).
+
 This is a personal theme palette which emphasizes on purple accents and darker colors. Note that this theme is dark mode only.
 
 For a demo, you can check on each software directory to find a print of each software with the theme applied (WIP).
