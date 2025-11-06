@@ -6,7 +6,7 @@
     "$HOME/.config/waybar/modules/idle.jsonc",
     "$HOME/.config/waybar/modules/laptop.jsonc",
     "$HOME/.config/waybar/modules/machine-info.jsonc",
-    "$HOME/.config/waybar/modules/media.jsonc",
+    // "$HOME/.config/waybar/modules/media.jsonc",
     "$HOME/.config/waybar/modules/network.jsonc",
     // "$HOME/.config/waybar/modules/pomodoro.jsonc",
     "$HOME/.config/waybar/modules/power.jsonc",
@@ -20,8 +20,8 @@
   "gtk-layer-shell": true,
   "modules-left": [
     "group/power",
-    "ext/workspaces",
-    "custom/media"
+    "ext/workspaces"
+    // "custom/media"
   ],
   "modules-center": [
     // "custom/taskwarrior",
