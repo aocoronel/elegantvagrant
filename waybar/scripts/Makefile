@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -g -O2
-PROGRAMS = cpu-usage cpu-temp pomo media-player pomodoro
+PROGRAMS = pomo media-player pomodoro
 
 all: release
 
