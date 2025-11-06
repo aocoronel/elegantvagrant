@@ -8,10 +8,10 @@
     "$HOME/.config/waybar/modules/machine-info.jsonc",
     "$HOME/.config/waybar/modules/media.jsonc",
     "$HOME/.config/waybar/modules/network.jsonc",
-    "$HOME/.config/waybar/modules/pomodoro.jsonc",
+    // "$HOME/.config/waybar/modules/pomodoro.jsonc",
     "$HOME/.config/waybar/modules/power.jsonc",
-    "$HOME/.config/waybar/modules/tasks.jsonc",
-    "$HOME/.config/waybar/modules/weather.jsonc",
+    // "$HOME/.config/waybar/modules/tasks.jsonc",
+    "$HOME/.config/waybar/modules/weather.jsonc"
   ],
   "layer": "top",
   "position": "top",
@@ -21,12 +21,12 @@
   "modules-left": [
     "group/power",
     "ext/workspaces",
-    "custom/media",
+    "custom/media"
   ],
   "modules-center": [
-    "custom/taskwarrior",
-    "group/clockg",
-    "custom/pomodoro",
+    // "custom/taskwarrior",
+    "group/clockg"
+    // "custom/pomodoro",
   ],
   "modules-right": [
     "group/networkg",
@@ -34,17 +34,17 @@
     "group/machine-info",
     // "group/keyboardg", // Hyprland Keyboard
     "custom/weather",
-    "tray",
+    "tray"
   ],
   "ext/workspaces": {
     "format": "{icon}",
     "ignore-hidden": true,
     "on-click": "activate",
     "on-click-right": "deactivate",
-    "sort-by-id": true,
+    "sort-by-id": true
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 10,
-  },
+    "spacing": 10
+  }
 }
