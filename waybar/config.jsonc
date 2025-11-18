@@ -20,8 +20,9 @@
   "gtk-layer-shell": true,
   "modules-left": [
     "group/power",
-    "ext/workspaces"
+    // "ext/workspaces",
     // "custom/media"
+    "dwl/tags",
   ],
   "modules-center": [
     // "custom/taskwarrior",
@@ -32,7 +33,7 @@
     "group/networkg",
     "group/laptop",
     "group/machine-info",
-    // "group/keyboardg", // Hyprland Keyboard
+    "group/keyboardg", // Hyprland Keyboard
     "custom/weather",
     "tray"
   ],
@@ -42,6 +43,9 @@
     "on-click": "activate",
     "on-click-right": "deactivate",
     "sort-by-id": true
+  },
+  "dwl/tags": {
+    "num-tags": 9,
   },
   "tray": {
     "icon-size": 16,
