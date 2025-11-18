@@ -1,30 +1,18 @@
 {
   "network": {
     "interface": "wlp0s29u1u5",
-    "format": "{bandwidthDownBits} ↓↑ {bandwidthUpBits}",
+    "format": "{bandwidthDownBits} ↓↑ {bandwidthUpBits}  ",
     "interval": 3,
     "format-disconnected": "",
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-  },
-  "custom/wifi": {
-    "exec": "~/.config/waybar/scripts/wifi-status.sh",
-    "return-type": "json",
-    "format": "{}",
-    "tooltip": true,
-    "on-click-right": "foot -e bash -c nmtui",
-    "interval": 1,
-    "min-length": 1,
-    "max-length": 1,
   },
   "group/networkg": {
     "orientation": "inherit",
     "modules": [
       "network",
-      "custom/wifi",
     ],
   },
 }
