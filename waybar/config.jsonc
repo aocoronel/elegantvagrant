@@ -22,7 +22,8 @@
     "group/power",
     // "ext/workspaces",
     // "custom/media"
-    "dwl/tags",
+    // "dwl/tags",
+    "hyprland/workspaces",
   ],
   "modules-center": [
     // "custom/taskwarrior",
