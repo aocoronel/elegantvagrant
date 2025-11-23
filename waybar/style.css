@@ -308,6 +308,21 @@ tooltip label {
   padding: 0 4px;
 }
 
+/* Laptop */
+
+#laptop {
+  background: @black;
+  border-color: @border-color;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  color: @white;
+  margin: 1px;
+  padding-left: 1px;
+  padding-right: 0;
+  padding: 0 4px;
+}
+
 /* === DWL === */
 
 #tags {
@@ -367,13 +382,8 @@ tooltip label {
 }
 
 #battery:hover,
-#battery:hover,
 #bluetooth:hover,
 #cpu:hover,
-#custom-backlight:hover,
-#custom-backlight:hover,
-#cpu:hover,
-#temperature:hover,
 #temperature:hover,
 #custom-media:hover,
 #custom-pomodoro:hover,
@@ -384,6 +394,7 @@ tooltip label {
 #custom-reboot:hover,
 #custom-submap:hover,
 #custom-taskwarrior:hover,
+#laptop,
 #custom-update:hover,
 #custom-weather:hover,
 #custom-wifi:hover,
@@ -405,7 +416,6 @@ tooltip label {
 
 #bluetooth,
 #clock,
-#custom-backlight,
 #cpu,
 #temperature,
 #custom-lock,
@@ -416,6 +426,7 @@ tooltip label {
 #custom-reboot,
 #custom-submap,
 #custom-taskwarrior,
+#laptop,
 #custom-update,
 #custom-weather,
 #custom-wifi,
