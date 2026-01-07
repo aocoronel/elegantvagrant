@@ -1,172 +1,243 @@
 ;;; elegant-vagrant-theme.el -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
-;; Author: aocoronel <https://github.com/aocoronel>
-;; Maintainer:
-;; Source: https://github.com/aocoronel/elegantvagrant
-;;
-;; Forked: doom-challenger-deep
-;;
-;;; Commentary:
-;;; Code:
+;; Author: Augusto Coronel <aoc@getgoogleoff.me>
+;; Source: https://codeberg.org/aocoronel/elegantvagrant
 
-(require 'doom-themes)
+(deftheme elegant-vagrant "Elegant Purplish Theme")
 
-;;
-;;; Variables
+(defun elegant-vagrant-orgmode ()
+  "Set challenger-style fonts for Org headings."
+  (interactive)
+  (let ((default-font (font-spec :family elegant-vagrant-font :size 14)))
+    (dolist (face
+             '((org-level-1 1.3 "#F38BA8" ultra-bold)
+               (org-level-2 1.3 "#F3B387" extra-bold)
+               (org-level-3 1.3 "#A6E3A1" bold)
+               (org-level-4 1.3 "#90E2D5" semi-bold)
+               (org-level-5 1.3 "#A0BEFE" normal)
+               (org-level-6 1.3 "#cba6cb" normal)
+               (org-level-7 1.3 "#46d9ff" normal)
+               (org-level-8 1.3 "#ff6c6b" normal)))
+      (set-face-attribute (nth 0 face) nil
+                          :font (font-spec :family elegant-vagrant-variable-pitch-font
+                                         :size (round (* 14 (nth 1 face))))
+                          :weight (nth 3 face)
+                          :foreground (nth 2 face)))
+    (set-face-attribute 'org-table nil
+                        :font default-font
+                        :weight 'normal
+                        :height 1.0
+                        :foreground "#bfafdf")))
 
-(defgroup elegant-vagrant-theme nil
-  "Options for the `elegant-vagrant' theme."
-  :group 'doom-themes)
+(let* ((bg         "#000000")
+       (bg-alt     "#090909")
+       (base0      "#111111")
+       (base1      "#121311")
+       (base2      "#191919")
+       (base3      "#585b70")
+       (base4      "#6c7086")
+       (base5      "#7f849c")
+       (base6      "#9399b2")
+       (base7      "#a6adc8")
+       (base8      "#bac2de")
+       (fg-alt     "#BAC9E4")
+       (fg         "#e4e4ef")
+       (red        "#f38ba8")
+       (orange     "#fab387")
+       (green      "#95FFA4")
+       (egreen     "#02f789")
+       (pink       "#f067fc")
+       (teal       "#63F2F1")
+       (yellow     "#FFE9AA")
+       (blue       "#20dbfc")
+       (dark-blue  "#74c7ec")
+       (magenta    "#BD93f9")
+       (violet     "#906CFF")
+       (accent     "#7C5CFF")
+       (cyan       "#51D3D5")
+       (teal       "#94e2d5")
+       (rosewater  "#f5e0dc")
+       (flamingo   "#f2cdcd")
+       (mauve      "#cba6f7")
+       (maroon     "#eba0ac")
+       (peach      "#fab387")
+       (yellow     "#f9e2af")
+       (green      "#a6e3a1")
+       (sky        "#20dbfc")
+       (sapphire   "#74c7ec")
+       (blue       "#5ffcfc")
+       (lavender   "#b4befe")
+       (white      "#ffffff")
 
-(defcustom elegant-vagrant-brighter-modeline nil
-  "If non-nil, more vivid colors will be used to style the mode-line."
-  :group 'doom-elegant-vagrant-theme
-  :type 'boolean)
+       (comment-bg      base0)
+       (comments        maroon))
 
-(defcustom elegant-vagrant-brighter-comments nil
-  "If non-nil, comments will be highlighted in more vivid colors."
-  :group 'doom-elegant-vagrant-theme
-  :type 'boolean)
+  (custom-theme-set-faces
+   'elegant-vagrant
 
-(defcustom elegant-vagrant-comment-bg elegant-vagrant-brighter-comments
-  "If non-nil, comments will have a subtle, darker background. Enhancing their
-legibility."
-  :group 'doom-elegant-vagrant-theme
-  :type 'boolean)
+   ;; Basic UI
+   `(default                          ((t (:foreground ,fg :background ,bg))))
+   `(cursor                           ((t (:background ,accent))))
+   `(fringe                           ((t (:background ,bg-alt))))
+   `(region                           ((t (:background ,base2))))
+   `(highlight                        ((t (:foreground unspecified :background ,violet))))
+   `(vertical-border                  ((t (:foreground ,base2))))
+   `(minibuffer-prompt                ((t (:foreground ,blue :weight bold))))
 
-(defcustom elegant-vagrant-padded-modeline doom-themes-padded-modeline
-  "If non-nil, adds a 4px padding to the mode-line. Can be an integer to
-determine the exact padding."
-  :group 'doom-elegant-vagrant-theme
-  :type '(choice integer boolean))
+   `(match ((t (:background ,yellow))))
+   `(link ((t (:foreground ,yellow :underline t))))
+   `(link-visited ((t (:foreground ,cyan :underline t))))
 
-;;
-;;; Theme definition
+   `(border ((t (:background ,bg :foreground ,base3))))
+   `(shadow ((t (:foreground ,base1))))
+   `(trailing-whitespace ((t (:foreground ,base3 :background ,red))))
 
-(def-doom-theme elegant-vagrant
-    "A dark theme inspired by VIM Challenger Deep"
+    ;; Markdown - Different colors per heading level
+   `(markdown-markup-face             ((t (:foreground ,base5))))
+   `(markdown-code-face               ((t (:background ,base3))))
 
-  ;; name        default   256       16
-  ((bg         '("#191919" "#121212" "black"        ))
-   (bg-alt     '("#1c1c1c" "#111111" "black"        ))
-   (base0      '("#050505" "#080808" "black"        ))
-   (base1      '("#292F37" "#262626" "brightblack"  ))
-   (base2      '("#3D4551" "#3A3A3A" "brightblack"  ))
-   (base3      '("#4C4B68" "#444466" "brightblack"  ))
-   (base4      '("#565575" "#555577" "brightblack"  ))
-   (base5      '("#858FA5" "#8888AA" "brightblack"  ))
-   (base6      '("#9BA7BF" "#99AABB" "brightblack"  ))
-   (base7      '("#B0BED8" "#BBBBDD" "brightblack"  ))
-   (base8      '("#BAC9E4" "#BBCCEE" "white"        ))
-   (fg-alt     '("#B2B2B2" "#BBBBBB" "brightwhite"  ))
-   (fg         '("#CBE3E7" "#CCEEEE" "white"        ))
+   `(markdown-header-face             ((t (:inherit bold :foreground ,red))))
+   `(markdown-header-face-1           ((t (:inherit bold :foreground ,blue))))
+   `(markdown-header-face-2           ((t (:inherit bold :foreground ,orange))))
+   `(markdown-header-face-3           ((t (:inherit bold :foreground ,green))))
+   `(markdown-header-face-4           ((t (:inherit bold :foreground ,magenta))))
+   `(markdown-header-face-5           ((t (:inherit bold :foreground ,yellow))))
+   `(markdown-header-face-6           ((t (:inherit bold :foreground ,violet))))
 
-   (grey       base4)
-   (red        '("#FF8080" "#FF8888" "red"          ))
-   (orange     '("#FFB378" "#FFBB77" "brightred"    ))
-   (green      '("#95FFA4" "#99FFAA" "green"        ))
-   (pink       '("#B554C4" "#B554C4" "pink"         ))
-   (teal       '("#63F2F1" "#66FFFF" "brightgreen"  ))
-   (yellow     '("#FFE9AA" "#FFEEAA" "yellow"       ))
-   (blue       '("#91DDFF" "#99DDFF" "brightblue"   ))
-   (dark-blue  '("#65B2FF" "#66BBFF" "blue"         ))
-   (magenta    '("#C991E1" "#CC99EE" "magenta"      ))
-   (violet     '("#906CFF" "#9966FF" "brightmagenta"))
-   (cyan       '("#51D3D5" "#51D3D5" "brightcyan"   ))
-   (dark-cyan  '("#62D196" "#66DD99" "cyan"   ))
+   ;; Org-mode
+   `(org-block :background ,base1)
+   `(org-block-begin-line :background ,base1 :foreground ,violet)
+   `(org-hide :foreground ,base4)
+   `(org-link :foreground ,orange :underline t :weight bold)
 
-   ;; face categories -- required for all themes
-   (highlight      violet)
-   (vertical-bar   violet)
-   (selection      violet)
-   (builtin        magenta)
-   (comments       (if elegant-vagrant-brighter-comments magenta violet))
-   (doc-comments   (if elegant-vagrant-brighter-comments (doom-darken dark-cyan 0.3) base5) )
-   (constants      pink)
-   (functions      cyan)
-   (keywords       magenta)
-   (methods        magenta)
-   (operators      teal)
-   (type           blue)
-   (strings        green)
-   (variables      orange)
-   (numbers        orange)
-   (region         base2)
-   (error          red)
-   (warning        yellow)
-   (success        green)
-   (vc-modified    orange)
-   (vc-added       green)
-   (vc-deleted     red)
+   ;; Org Mode
+   `(org-agenda-structure ((t (:foreground ,base5))))
+   `(org-column ((t (:background ,base2))))
+   `(org-done ((t (:foreground ,green))))
+   `(org-todo ((t (:foreground ,maroon))))
+   `(org-upcoming-deadline ((t (:foreground ,yellow))))
 
-   ;; custom categories
-   (hidden     `(,(car bg) "black" "black"))
-   (-modeline-bright elegant-vagrant-brighter-modeline)
-   (-modeline-pad
-    (when elegant-vagrant-padded-modeline
-      (if (integerp elegant-vagrant-padded-modeline) elegant-vagrant-padded-modeline 4)))
+   ;; Diff
+   `(diff-removed ((t (:foreground ,red))))
+   `(diff-added ((t (:foreground ,green))))
 
-   (modeline-fg     'unspecified)
-   (modeline-fg-alt base5)
+   ;; Compilation
+   `(compilation-info ((t (:foreground ,green))))
+   `(compilation-warning ((t (:foreground ,peach :bold t))))
+   `(compilation-error ((t (:foreground ,red))))
+   `(compilation-mode-line-fail ((t (:foreground ,red :weight bold))))
+   `(compilation-mode-line-exit ((t (:foreground ,green :weight bold))))
 
-   (modeline-bg
-    (if -modeline-bright
-        base3
-      `(,(doom-darken (car bg) 0.1) ,@(cdr base0))))
-   (modeline-bg-l
-    (if -modeline-bright
-        base3
-      `(,(doom-darken (car bg) 0.15) ,@(cdr base0))))
-   (modeline-bg-inactive   `(,(car bg) ,@(cdr base1)))
-   (modeline-bg-inactive-l (doom-darken bg 0.1)))
+   ;; Dired
+   `(dired-directory ((t (:foreground ,accent :weight bold))))
+
+   ;; Magit
+   `(magit-branch ((t (:foreground ,fg))))
+   `(magit-diff-hunk-header ((t (:background ,base1))))
+   `(magit-item-highlight ((t (:background ,base2))))
+   `(magit-tag ((t (:foreground ,yellow :background ,base0))))
+
+   ;; Show Paren
+   `(show-paren-match-face ((t (:background ,base3))))
+   `(show-paren-mismatch-face ((t (:background ,maroon))))
+
+   ;; tab-bar
+   `(tab-bar ((t (:background ,base2 :foreground ,base3))))
+   `(tab-bar-tab ((t (:background nil :foreground ,yellow :weight bold))))
+   `(tab-bar-tab-inactive ((t (:background nil))))
+
+   ;; Company
+   `(company-tooltip ((t (:foreground ,fg :background ,base2))))
+   `(company-tooltip-selection ((t (:foreground ,fg :background ,base1))))
+   `(company-tooltip-annotation ((t (:foreground ,peach))))
+
+   ;; Orderless
+   `(orderless-match-face-0 ((t (:foreground ,yellow))))
+   `(orderless-match-face-1 ((t (:foreground ,green))))
+   `(orderless-match-face-2 ((t (:foreground ,peach))))
+   `(orderless-match-face-3 ((t (:foreground ,sapphire))))
+
+   ;; Flymake
+   `(flymake-errline ((((supports :underline (:style wave)))
+                       (:underline (:style wave :color ,red)))
+                      (t (:foreground ,red :weight bold :underline t))))
+   `(flymake-warnline ((((supports :underline (:style wave)))
+                        (:underline (:style wave :color ,yellow)))
+                       (t (:foreground ,yellow :weight bold :underline t))))
+   `(flymake-infoline ((((supports :underline (:style wave)))
+                        (:underline (:style wave :color ,green)))
+                       (t (:foreground ,green :weight bold :underline t))))
+
+   ;; Flyspell
+   `(flyspell-incorrect ((((supports :underline (:style wave)))
+                          (:underline (:style wave :color ,red)))
+                         (t (:foreground ,red :weight bold :underline t))))
+   `(flyspell-duplicate ((((supports :underline (:style wave)))
+                          (:underline (:style wave :color ,yellow)))
+                         (t (:foreground ,yellow :weight bold :underline t))))
+
+   ;; Line numbers
+   `(line-number                      ((t (:foreground ,base2))))
+   `(line-number-current-line         ((t (:foreground ,fg-alt))))
+   `(hl-line                            ((t (:background ,base1))))
+   `(current-line-highlight             ((t (:background ,base1))))
+
+   ;; Mode-line
+   `(mode-line                        ((t (:background ,base0 :foreground unspecified
+                                                       :box (:color ,base1)))))
+   `(mode-line-inactive               ((t (:background ,base1 :foreground ,base5
+                                                       :box (:color ,base2)))))
+   `(mode-line-emphasis               ((t (:foreground ,violet))))
+
+   ;; Font lock
+   `(font-lock-comment-face           ((t (:foreground ,comments :background ,comment-bg))))
+   `(font-lock-doc-face               ((t (:foreground ,maroon))))
+   `(font-lock-string-face            ((t (:foreground ,green))))
+   `(font-lock-keyword-face           ((t (:foreground ,magenta))))
+   `(font-lock-function-name-face     ((t (:foreground ,cyan))))
+   `(font-lock-variable-name-face     ((t (:foreground ,orange))))
+   `(font-lock-constant-face          ((t (:foreground ,pink))))
+   `(font-lock-type-face              ((t (:foreground ,blue))))
+   `(font-lock-builtin-face           ((t (:foreground ,magenta))))
+   `(font-lock-warning-face           ((t (:foreground ,yellow))))
+
+   ;; Secondary selection
+   `(secondary-selection              ((t (:background ,base0))))
+
+   ;; Tooltip
+   `(tooltip                          ((t (:foreground ,fg :background ,base0))))
+
+   ;; CSS
+   `(css-proprietary-property         ((t (:foreground ,orange))))
+   `(css-property                     ((t (:foreground ,green))))
+   `(css-selector                     ((t (:foreground ,blue))))
+
+   ;; Doom modeline (fallback styling)
+   `(doom-modeline-bar                ((t (:background ,violet))))
+
+   ;; Elscreen
+   `(elscreen-tab-other-screen-face   ((t (:background "#353a42" :foreground "#1e2022"))))
+
+   ;; Markdown
+   `(markdown-markup-face             ((t (:foreground ,base5))))
+   `(markdown-header-face             ((t (:inherit bold :foreground ,red))))
+   `(markdown-code-face               ((t (:background ,base1))))
 
 
-  ;;;; Base theme face overrides
-  (((line-number &override) :foreground magenta)
-   ((line-number-current-line &override) :foreground violet)
-   ((font-lock-comment-face &override)
-    :background (if elegant-vagrant-comment-bg (doom-lighten bg 0.05) 'unspecified))
-   (mode-line
-    :background modeline-bg :foreground modeline-fg
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg)))
-   (mode-line-inactive
-    :background modeline-bg-inactive :foreground modeline-fg-alt
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
-   (mode-line-emphasis :foreground (if -modeline-bright base8 highlight))
-   ((secondary-selection &override) :background base0)
-   (tooltip :background base0 :foreground fg)
+   ;; Org
+   `(org-block                        ((t (:background ,base1))))
+   `(org-block-begin-line             ((t (:background ,base1 :foreground ,comments))))
+   `(org-hide                         ((t (:foreground ,bg))))
+   `(org-link                         ((t (:foreground ,orange :underline t :weight bold))))
+))
 
-   ;;;; css-mode <built-in> / scss-mode
-   (css-proprietary-property :foreground orange)
-   (css-property             :foreground green)
-   (css-selector             :foreground blue)
-   ;;;; doom-modeline
-   (doom-modeline-bar :background (if -modeline-bright modeline-bg highlight))
-   ;;;; elscreen
-   (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
-   ;;;; markdown-mode
-   (markdown-markup-face :foreground base5)
-   (markdown-header-face :inherit 'bold :foreground red)
-   ((markdown-code-face &override) :background (doom-lighten base3 0.05))
-   ;;;; outline <built-in>
-   ((outline-1 &override) :foreground blue :background 'unspecified)
-   ;;;; org <built-in>
-   ((org-block &override) :background base1)
-   ((org-block-begin-line &override) :background base1 :foreground comments)
-   (org-hide :foreground hidden)
-   (org-link :foreground orange :underline t :weight 'bold)
-   ;;;; solaire-mode
-   (solaire-mode-line-face
-    :inherit 'mode-line
-    :background modeline-bg-l
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-l)))
-   (solaire-mode-line-inactive-face
-    :inherit 'mode-line-inactive
-    :background modeline-bg-inactive-l
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-l))))
+;;;###autoload
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
 
-  ;;;; Base theme variable overrides-
-  ;; ()
-  )
+(provide-theme 'elegant-vagrant)
 
 ;;; elegant-vagrant-theme.el ends here
