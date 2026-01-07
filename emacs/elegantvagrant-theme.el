@@ -1,14 +1,13 @@
-;;; elegant-vagrant-theme.el -*- lexical-binding: t; no-byte-compile: t; -*-
+;;; elegantvagrant-theme.el -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
 ;; Author: Augusto Coronel <aoc@getgoogleoff.me>
 ;; Source: https://codeberg.org/aocoronel/elegantvagrant
 
-(deftheme elegant-vagrant "Elegant Purplish Theme")
+(deftheme elegantvagrant "Elegant Purplish Theme")
 
-(defun elegant-vagrant-orgmode ()
-  "Set challenger-style fonts for Org headings."
+(defun elegantvagrant-orgmode ()
   (interactive)
-  (let ((default-font (font-spec :family elegant-vagrant-font :size 14)))
+  (let ((default-font (font-spec :family elegantvagrant-font :size 14)))
     (dolist (face
              '((org-level-1 1.3 "#F38BA8" ultra-bold)
                (org-level-2 1.3 "#F3B387" extra-bold)
@@ -18,8 +17,8 @@
                (org-level-6 1.3 "#cba6cb" normal)
                (org-level-7 1.3 "#46d9ff" normal)
                (org-level-8 1.3 "#ff6c6b" normal)))
-      (set-face-attribute (nth 0 face) nil
-                          :font (font-spec :family elegant-vagrant-variable-pitch-font
+      (set-face-attribute (nth 0 face) 'unspecified
+                          :font (font-spec :family elegantvagrant-variable-pitch-font
                                          :size (round (* 14 (nth 1 face))))
                           :weight (nth 3 face)
                           :foreground (nth 2 face)))
@@ -73,7 +72,7 @@
        (comments        maroon))
 
   (custom-theme-set-faces
-   'elegant-vagrant
+   'elegantvagrant
 
    ;; Basic UI
    `(default                          ((t (:foreground ,fg :background ,bg))))
@@ -143,8 +142,8 @@
 
    ;; tab-bar
    `(tab-bar ((t (:background ,base2 :foreground ,base3))))
-   `(tab-bar-tab ((t (:background nil :foreground ,yellow :weight bold))))
-   `(tab-bar-tab-inactive ((t (:background nil))))
+   `(tab-bar-tab ((t (:background ,'unspecified :foreground ,yellow :weight bold))))
+   `(tab-bar-tab-inactive ((t (:background ,'unspecified))))
 
    ;; Company
    `(company-tooltip ((t (:foreground ,fg :background ,base2))))
@@ -238,6 +237,6 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(provide-theme 'elegant-vagrant)
+(provide-theme 'elegantvagrant)
 
-;;; elegant-vagrant-theme.el ends here
+;;; elegantvagrant-theme.el ends here
