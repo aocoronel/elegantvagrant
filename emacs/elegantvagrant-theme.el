@@ -29,9 +29,9 @@
                         :foreground "#bfafdf")))
 
 (let* ((bg         "#000000")
-       (bg-alt     "#090909")
-       (base0      "#111111")
-       (base1      "#121311")
+       (bg-alt     "#111111")
+       (base0      "#121311")
+       (base1      "#151515")
        (base2      "#191919")
        (base3      "#585b70")
        (base4      "#6c7086")
@@ -47,7 +47,6 @@
        (egreen     "#02f789")
        (pink       "#f067fc")
        (teal       "#63F2F1")
-       (yellow     "#FFE9AA")
        (blue       "#20dbfc")
        (dark-blue  "#74c7ec")
        (magenta    "#BD93f9")
@@ -68,7 +67,7 @@
        (lavender   "#b4befe")
        (white      "#ffffff")
 
-       (comment-bg      base0)
+       (comment-bg      base2)
        (comments        maroon))
 
   (custom-theme-set-faces
@@ -77,18 +76,18 @@
    ;; Basic UI
    `(default                          ((t (:foreground ,fg :background ,bg))))
    `(cursor                           ((t (:background ,accent))))
-   `(fringe                           ((t (:background ,bg-alt))))
+   `(fringe                           ((t (:background ,base1))))
    `(region                           ((t (:background ,base2))))
    `(highlight                        ((t (:foreground unspecified :background ,violet))))
    `(vertical-border                  ((t (:foreground ,base2))))
    `(minibuffer-prompt                ((t (:foreground ,blue :weight bold))))
 
-   `(match ((t (:background ,yellow))))
+   `(match ((t (:foreground ,bg :background ,yellow))))
    `(link ((t (:foreground ,yellow :underline t))))
    `(link-visited ((t (:foreground ,cyan :underline t))))
 
    `(border ((t (:background ,bg :foreground ,base3))))
-   `(shadow ((t (:foreground ,base1))))
+   `(shadow ((t (:foreground ,base3))))
    `(trailing-whitespace ((t (:foreground ,base3 :background ,red))))
 
     ;; Markdown - Different colors per heading level
@@ -104,10 +103,10 @@
    `(markdown-header-face-6           ((t (:inherit bold :foreground ,violet))))
 
    ;; Org-mode
-   `(org-block :background ,base1)
-   `(org-block-begin-line :background ,base1 :foreground ,violet)
-   `(org-hide :foreground ,base4)
-   `(org-link :foreground ,orange :underline t :weight bold)
+   `(org-block ((t (:background ,base1))))
+   `(org-block-begin-line ((t (:background ,base1 :foreground ,violet))))
+   `(org-hide ((t (:foreground ,base4))))
+   `(org-link ((t (:foreground ,orange :underline t :weight bold))))
 
    ;; Org Mode
    `(org-agenda-structure ((t (:foreground ,base5))))
