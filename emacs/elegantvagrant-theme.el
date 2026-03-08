@@ -67,7 +67,7 @@
        (lavender   "#b4befe")
        (white      "#ffffff")
 
-       (comment-bg      base2)
+       (comment-bg      base0)
        (comments        maroon))
 
   (custom-theme-set-faces
@@ -189,14 +189,14 @@
 
    ;; Font lock
    `(font-lock-comment-face           ((t (:foreground ,comments :background ,comment-bg))))
-   `(font-lock-doc-face               ((t (:foreground ,maroon))))
+   `(font-lock-doc-face               ((t (:foreground ,maroon :background ,base0))))
    `(font-lock-string-face            ((t (:foreground ,green))))
-   `(font-lock-keyword-face           ((t (:foreground ,magenta))))
-   `(font-lock-function-name-face     ((t (:foreground ,cyan))))
-   `(font-lock-variable-name-face     ((t (:foreground ,orange))))
-   `(font-lock-constant-face          ((t (:foreground ,pink))))
-   `(font-lock-type-face              ((t (:foreground ,blue))))
-   `(font-lock-builtin-face           ((t (:foreground ,magenta))))
+   `(font-lock-keyword-face           ((t (:foreground ,mauve))))
+   `(font-lock-function-name-face     ((t (:foreground ,blue))))
+   `(font-lock-variable-name-face     ((t (:foreground ,white))))
+   `(font-lock-constant-face          ((t (:foreground ,yellow))))
+   `(font-lock-type-face              ((t (:foreground ,yellow))))
+   `(font-lock-builtin-face           ((t (:foreground ,mauve))))
    `(font-lock-warning-face           ((t (:foreground ,yellow))))
 
    ;; Secondary selection
