@@ -227,6 +227,25 @@
    `(org-block-begin-line             ((t (:background ,base1 :foreground ,comments))))
    `(org-hide                         ((t (:foreground ,bg))))
    `(org-link                         ((t (:foreground ,orange :underline t :weight bold))))
+
+   ;; VTerm
+   `(vterm-color-black          ((t (:foreground ,"#1c1f24"))))
+   `(vterm-color-red            ((t (:foreground ,"#fc2025"))))
+   `(vterm-color-green          ((t (:foreground ,"#02f789"))))
+   `(vterm-color-yellow         ((t (:foreground ,"#f9fc5f"))))
+   `(vterm-color-blue           ((t (:foreground ,"#5ffcfc"))))
+   `(vterm-color-magenta        ((t (:foreground ,"#f067fc"))))
+   `(vterm-color-cyan           ((t (:foreground ,"#00b29e"))))
+   `(vterm-color-white          ((t (:foreground ,"#e9e2cb"))))
+   `(vterm-color-bright-black   ((t (:foreground ,"#202020"))))
+   `(vterm-color-bright-red     ((t (:foreground ,"#f4153b"))))
+   `(vterm-color-bright-green   ((t (:foreground ,"#50ee84"))))
+   `(vterm-color-bright-yellow  ((t (:foreground ,"#fcab20"))))
+   `(vterm-color-bright-blue    ((t (:foreground ,"#20dbfc"))))
+   `(vterm-color-bright-magenta ((t (:foreground ,"#c61b6e"))))
+   `(vterm-color-bright-cyan    ((t (:foreground ,"#00b27f"))))
+   `(vterm-color-bright-white   ((t (:foreground ,"#fcf4dc"))))
+
 ))
 
 ;;;###autoload
