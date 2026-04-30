@@ -1,6 +1,6 @@
 ;;; elegantvagrant-theme.el -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
-;; Author: Augusto Coronel <aoc@getgoogleoff.me>
+;; Author: Augusto Coronel <aocoronel@proton.me>
 ;; Source: https://codeberg.org/aocoronel/elegantvagrant
 
 (deftheme elegantvagrant "Elegant Purplish Theme")
@@ -65,9 +65,9 @@
        (sapphire   "#74c7ec")
        (blue       "#5ffcfc")
        (lavender   "#b4befe")
-       (white      "#ffffff")
+       (white      "#d9d9d9")
 
-       (comment-bg      base0)
+       (comment-bg      bg)
        (comments        maroon))
 
   (custom-theme-set-faces
@@ -176,7 +176,7 @@
 
    ;; Line numbers
    `(line-number                      ((t (:foreground ,base2))))
-   `(line-number-current-line         ((t (:foreground ,fg-alt))))
+   `(line-number-current-line         ((t (:foreground "#BAC9E4"))))
    `(hl-line                            ((t (:background ,base1))))
    `(current-line-highlight             ((t (:background ,base1))))
 
@@ -188,7 +188,7 @@
    `(mode-line-emphasis               ((t (:foreground ,violet))))
 
    ;; Font lock
-   `(font-lock-comment-face           ((t (:foreground ,comments :background ,comment-bg))))
+   `(font-lock-comment-face           ((t (:background ,bg :foreground "#eba0ac"))))
    `(font-lock-doc-face               ((t (:foreground ,maroon :background ,base0))))
    `(font-lock-string-face            ((t (:foreground ,green))))
    `(font-lock-keyword-face           ((t (:foreground ,mauve))))
@@ -219,8 +219,7 @@
    ;; Markdown
    `(markdown-markup-face             ((t (:foreground ,base5))))
    `(markdown-header-face             ((t (:inherit bold :foreground ,red))))
-   `(markdown-code-face               ((t (:background ,base1))))
-
+   `(markdown-code-face               ((t nil)))
 
    ;; Org
    `(org-block                        ((t (:background ,base1))))
@@ -245,6 +244,9 @@
    `(vterm-color-bright-magenta ((t (:foreground ,"#c61b6e"))))
    `(vterm-color-bright-cyan    ((t (:foreground ,"#00b27f"))))
    `(vterm-color-bright-white   ((t (:foreground ,"#fcf4dc"))))
+
+   `(whitespace-space       ((t (:foreground ,"#202020" :background , "#000000"))))
+   `(whitespace-indentation ((t (:foreground ,"#202020" :background , "#202020"))))
 
 ))
 
