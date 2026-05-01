@@ -31,7 +31,7 @@ local elegantvagrant_highlights = function(colors)
     return {
         LineNr = { fg = "#393939" },
         CursorLineNr = { fg = colors.subtext1, bold = true },
-        Comment = { fg = colors.yellow }, -- Golden Comments
+        Comment = { fg = colors.maroon },
 
         -- Mini Statusbar
         MiniStatuslineModeNormal = { fg = colors.base, bg = "#7C5CFF" },
