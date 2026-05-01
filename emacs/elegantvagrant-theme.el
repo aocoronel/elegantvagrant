@@ -70,17 +70,17 @@
        (comment-bg      bg)
        (comments        maroon))
 
-  (custom-theme-set-faces
+(custom-theme-set-faces
    'elegantvagrant
 
    ;; Basic UI
-   `(default                          ((t (:foreground ,fg :background ,bg))))
-   `(cursor                           ((t (:background ,accent))))
-   `(fringe                           ((t (:background ,base1))))
-   `(region                           ((t (:background ,base2))))
-   `(highlight                        ((t (:foreground unspecified :background ,violet))))
-   `(vertical-border                  ((t (:foreground ,base2))))
-   `(minibuffer-prompt                ((t (:foreground ,blue :weight bold))))
+   `(default              ((t (:foreground ,fg :background ,bg))))
+   `(cursor               ((t (:background ,accent))))
+   `(fringe               ((t (:background ,base1))))
+   `(region               ((t (:background ,base2))))
+   `(highlight            ((t (:foreground unspecified :background ,violet))))
+   `(vertical-border      ((t (:foreground ,base2))))
+   `(minibuffer-prompt    ((t (:foreground ,blue :weight bold))))
 
    `(match ((t (:foreground ,bg :background ,yellow))))
    `(link ((t (:foreground ,yellow :underline t))))
@@ -92,7 +92,9 @@
 
     ;; Markdown - Different colors per heading level
    `(markdown-markup-face             ((t (:foreground ,base5))))
-   `(markdown-code-face               ((t (:background ,base3))))
+   `(markdown-header-face             ((t (:inherit bold :foreground ,red))))
+   `(markdown-code-face               ((t (:background ,nil))))
+   `(markdown-inline-code-face        ((t (:background ,nil))))
 
    `(markdown-header-face             ((t (:inherit bold :foreground ,red))))
    `(markdown-header-face-1           ((t (:inherit bold :foreground ,blue))))
@@ -215,11 +217,6 @@
 
    ;; Elscreen
    `(elscreen-tab-other-screen-face   ((t (:background "#353a42" :foreground "#1e2022"))))
-
-   ;; Markdown
-   `(markdown-markup-face             ((t (:foreground ,base5))))
-   `(markdown-header-face             ((t (:inherit bold :foreground ,red))))
-   `(markdown-code-face               ((t nil)))
 
    ;; Org
    `(org-block                        ((t (:background ,base1))))
