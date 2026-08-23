@@ -5,21 +5,7 @@
 
 (deftheme elegantvagrant "Elegant Purplish Theme")
 
-(defun elegantvagrant-orgmode ()
-  (interactive)
-  (let ((base-size 14))
-    (dolist (face
-             '((org-level-1 1.3 "#F38BA8" ultra-bold)
-               (org-level-2 1.3 "#F3B387" extra-bold)
-               (org-level-3 1.3 "#A6E3A1" bold)
-               (org-level-4 1.3 "#90E2D5" semi-bold)
-               (org-level-5 1.3 "#A0BEFE" normal)
-               (org-level-6 1.3 "#CBA6CB" normal)))
-      (set-face-attribute (nth 0 face) nil :foreground (nth 2 face)))
-
-    (set-face-attribute 'org-table nil :foreground "#BFAFDF")))
-
-(let* ((bg         "#000000")
+(let* ((bg         "#010101")
        (base0      "#141414")
        (base1      "#161616")
        (base2      "#202020")
@@ -217,6 +203,14 @@
    `(org-link               ((t (:foreground ,orange :underline t :weight bold))))
    `(org-todo				((t (:foreground ,maroon))))
    `(org-upcoming-deadline	((t (:foreground ,yellow))))
+
+   `(org-level-1 ((t :foreground ,"#F38BA8" :weight ultra-bold)))
+   `(org-level-2 ((t :foreground ,"#F3B387" :weight extra-bold)))
+   `(org-level-3 ((t :foreground ,"#A6E3A1" :weight bold)))
+   `(org-level-4 ((t :foreground ,"#90E2D5" :weight semi-bold)))
+   `(org-level-5 ((t :foreground ,"#A0BEFE" :weight normal)))
+   `(org-level-6 ((t :foreground ,"#CBA6CB" :weight normal)))
+   `(org-table   ((t :foreground ,"#BFAFDF")))
 
    ;; Ansi Terminal
    `(ansi-color-black          ((t (:foreground ,"#1c1f24"))))
