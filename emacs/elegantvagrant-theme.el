@@ -38,9 +38,7 @@
        (blue       "#5ffcfc")
        (lavender   "#b4befe")
        (white      "#d9d9d9")
-
-       (comment-bg      bg)
-       (comments        maroon))
+       (comments   maroon))
 
 (custom-theme-set-faces
    'elegantvagrant
@@ -141,7 +139,7 @@
    `(mode-line-emphasis ((t (:foreground ,violet))))
 
    ;; Font lock
-   `(font-lock-comment-face           ((t (:background ,bg :foreground "#eba0ac"))))
+   `(font-lock-comment-face           ((t (:background ,nil :foreground ,comments))))
    `(font-lock-doc-face               ((t (:foreground ,maroon :background ,base0))))
    `(font-lock-string-face            ((t (:foreground ,green))))
    `(font-lock-keyword-face           ((t (:foreground ,mauve))))
