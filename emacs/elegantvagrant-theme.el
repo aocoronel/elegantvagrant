@@ -12,7 +12,7 @@
        (base3      "#585b70")
        (base4      "#6c7086")
        (base5      "#7f849c")
-       (fg         "#e4e4ef")
+       (fg         "#c7c7c7")
        (red        "#f38ba8")
        (orange     "#fab387")
        (green      "#95FFA4")
@@ -37,7 +37,7 @@
        (sapphire   "#74c7ec")
        (blue       "#5ffcfc")
        (lavender   "#b4befe")
-       (white      "#d9d9d9")
+       (white      "#c7c7c7")
        (comments   maroon))
 
 (custom-theme-set-faces
